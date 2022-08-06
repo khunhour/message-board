@@ -8,10 +8,10 @@
 		<h1><%= title %></h1>
 		<div>
 			<% if(messages.length !== 0){%> <% messages.forEach(message => { %>
-			<h6>From: <% message.user %></h6>
-			<p><% message.text %></p>
-			<div><% message.added %></div>
-			<% }) %>
+			<h6>From: <%= message.user %></h6>
+			<p><%= message.text %></p>
+			<div><%= message.added %></div>
+			<% }) %> <% } %>
 		</div>
 	</body>
 </html>
